@@ -24,18 +24,18 @@ const Menu: React.FC = () => {
     // Entrées
     {
       id: 1,
-      name: "Yennekett",
-      description: "Salade de feuilles de bissap fraîches, tomates cerises et oignons rouges, vinaigrette au citron vert",
-      price: "8,50 €",
+      name: "Pastel Boufi",
+      description: "Banane plantain accompagné de salade, tomate sauce vermicelle",
+      price: "4,50 €",
       image: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
       category: "entrees",
       vegetarian: true
     },
     {
       id: 2,
-      name: "Pastels",
-      description: "Beignets de poisson frits dorés, spécialité dakaroise servie avec sauce pimentée",
-      price: "9,00 €",
+      name: "Samoussas",
+      description: "Accompagné de salade , tomate, sauce vermicelle",
+      price: "4,80 €",
       image: "https://images.pexels.com/photos/4518653/pexels-photo-4518653.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
       category: "entrees",
       signature: true,
@@ -43,9 +43,9 @@ const Menu: React.FC = () => {
     },
     {
       id: 3,
-      name: "Salade de mangue verte",
-      description: "Mangue verte râpée, cacahuètes grillées, piment et herbes fraîches",
-      price: "7,50 €",
+      name: "Alocko",
+      description: "Banane plantain accompagné de salade, tomate sauce vermicelle",
+      price: "3,50 €",
       image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
       category: "entrees",
       vegetarian: true,
@@ -53,9 +53,9 @@ const Menu: React.FC = () => {
     },
     {
       id: 4,
-      name: "Accras de crevettes",
-      description: "Beignets de crevettes épicés, sauce cocktail maison",
-      price: "10,00 €",
+      name: "Salade crevette",
+      description: "Accompagné de salade, tomate, mais",
+      price: "4,50 €",
       image: "https://images.pexels.com/photos/6419656/pexels-photo-6419656.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
       category: "entrees"
     },
@@ -63,18 +63,18 @@ const Menu: React.FC = () => {
     // Plats
     {
       id: 5,
-      name: "Thieboudienne",
-      description: "Riz au poisson, légumes de saison et sauce tomate épicée, plat national du Sénégal",
-      price: "16,50 €",
+      name: "Mafe",
+      description: "Riz blanc,  accompagnement : sauce d'arachide, carotte, pomme de terre",
+      price: "7,50 €",
       image: "https://images.pexels.com/photos/5779568/pexels-photo-5779568.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
       category: "plats",
       signature: true
     },
     {
       id: 6,
-      name: "Maffé",
-      description: "Ragout de bœuf mijoté à la pâte d'arachide, légumes racines et riz jasmin",
-      price: "15,00 €",
+      name: "Thieb au poulet",
+      description: "Riz cuisiné dans sa sauce vermicelle, accompagnement : sauce à base de l'oignons, cuisse de poulet",
+      price: "8,50 €",
       image: "https://images.pexels.com/photos/6419655/pexels-photo-6419655.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
       category: "plats",
       signature: true
@@ -82,17 +82,17 @@ const Menu: React.FC = () => {
     {
       id: 7,
       name: "Yassa Poulet",
-      description: "Poulet fermier mariné aux oignons caramélisés et citron, riz parfumé",
-      price: "14,50 €",
+      description: "Riz blanc, accompagnement : sauce à base de l'oignons, citron, poulet",
+      price: "7,50 €",
       image: "https://images.pexels.com/photos/5779567/pexels-photo-5779567.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
       category: "plats",
       spicy: true
     },
     {
       id: 8,
-      name: "Thiou Kanja",
-      description: "Couscous sénégalais aux légumes de saison et viande d'agneau",
-      price: "17,00 €",
+      name: "Thieb au poisson",
+      description: "Riz cuisiné dans la sauce tomate avec ses légumes, poisson Merlu, accompagnement : sauce tomate",
+      price: "8,50 €",
       image: "https://images.pexels.com/photos/6419656/pexels-photo-6419656.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
       category: "plats"
     },
@@ -100,56 +100,72 @@ const Menu: React.FC = () => {
     // Spécialités
     {
       id: 9,
-      name: "Caldou",
-      description: "Poisson grillé aux épices, sauce tomate fraîche et légumes grillés",
-      price: "18,00 €",
+      name: "Poulet braisé",
+      description: "Cuisse de poulet marinée, accompagnement au choix (salade ou riz blanc ou banane plantain)",
+      price: "9,50 €",
       image: "https://images.pexels.com/photos/5779569/pexels-photo-5779569.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
-      category: "specialites",
+      category: "plats",
       signature: true
     },
     {
       id: 10,
-      name: "Domoda",
-      description: "Ragoût de légumes à la pâte d'arachide, version végétarienne du maffé",
-      price: "13,50 €",
+      name: "Miam miam",
+      description: "Pilons de poulet marinée, accompagnement au choix (salade ou riz blanc ou banane plantain)",
+      price: "11,50 €",
       image: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
-      category: "specialites",
+      category: "plats",
       vegetarian: true
-    },
+    },,
     {
       id: 11,
-      name: "Capitaine braisé",
-      description: "Poisson capitaine grillé, marinade aux herbes et légumes sautés",
-      price: "19,50 €",
+      name: "Dibi",
+      description: "Brochettes de viande de veau grillée, accompagnement au choix (salade ou riz blanc ou banane plantain)",
+      price: "12,50 €",
+      image: "https://images.pexels.com/photos/5779569/pexels-photo-5779569.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      category: "plats"
+    },
+    {
+      id: 12,
+      name: "Menu africa",
+      description: "Plat au choix (Yassa, Mafé, Thieb au poulet, thieb au poisson) + Boisson 33 CL",
+      price: "8,50 €",
       image: "https://images.pexels.com/photos/5779569/pexels-photo-5779569.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
       category: "specialites"
     },
 
     // Desserts
     {
-      id: 12,
+      id: 13,
       name: "Thiakry",
-      description: "Couscous sucré au lait de coco, vanille et fruits exotiques",
-      price: "6,50 €",
+      description: "A base de semoule de mil, fromage blanc et de crème fraiche",
+      price: "3,50 €",
       image: "https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
       category: "desserts",
       signature: true
     },
     {
-      id: 13,
-      name: "Dègue",
-      description: "Dessert traditionnel au mil, yaourt grec et fruits de saison",
-      price: "5,50 €",
+      id: 14,
+      name: "Salade de fruits",
+      description: "Fait maison",
+      price: "3,50 €",
       image: "https://images.pexels.com/photos/1126360/pexels-photo-1126360.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
       category: "desserts"
     },
     {
-      id: 14,
-      name: "Sombi",
-      description: "Riz au lait parfumé à la fleur d'oranger et cannelle",
-      price: "6,00 €",
+      id: 15,
+      name: "Formule midi",
+      description: "Entrée ou Dessert + Plat au choix (Yassa, Mafé, Thieb au poulet, thieb au poisson)",
+      price: "11,50 €",
       image: "https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
-      category: "desserts"
+      category: "specialites"
+    },,
+    {
+      id: 16,
+      name: "Menu terangua",
+      description: "Entrée + Plat au choix (Yassa, Mafé, Thieb au poulet, thieb au poisson) + Dessert",
+      price: "15,50 €",
+      image: "https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      category: "specialites"
     }
   ];
 
