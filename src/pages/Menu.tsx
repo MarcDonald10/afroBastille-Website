@@ -24,7 +24,7 @@ const Menu: React.FC = () => {
     // Entrées
     {
       id: 1,
-      name: "Pastel Boufi",
+      name: "Pastel Boeuf",
       description: "Banane plantain accompagné de salade, tomate sauce vermicelle",
       price: "4,50 €",
       image: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
@@ -43,7 +43,7 @@ const Menu: React.FC = () => {
     },
     {
       id: 3,
-      name: "Alocko",
+      name: "Aloko",
       description: "Banane plantain accompagné de salade, tomate sauce vermicelle",
       price: "3,50 €",
       image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
@@ -63,17 +63,17 @@ const Menu: React.FC = () => {
     // Plats
     {
       id: 5,
-      name: "Mafe",
-      description: "Riz blanc,  accompagnement : sauce d'arachide, carotte, pomme de terre",
-      price: "7,50 €",
-      image: "https://images.pexels.com/photos/5779568/pexels-photo-5779568.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      name: "Mafé (poulet et viande)",
+      description: "Un ragoût copieux à base de pâte d'arachide, de poulet ou de viande, et de légumes, offrant une saveur riche et légèrement sucrée.",
+      price: "12 €",
+      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
       category: "plats",
       signature: true
     },
     {
       id: 6,
-      name: "Thieb au poulet",
-      description: "Riz cuisiné dans sa sauce vermicelle, accompagnement : sauce à base de l'oignons, cuisse de poulet",
+      name: "Thiép au poulet",
+      description: "Un délicieux riz cassé avec du poulet tendre cuit dans une sauce tomate parfumée et servi avec du riz et des légumes.",
       price: "8,50 €",
       image: "https://images.pexels.com/photos/6419655/pexels-photo-6419655.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
       category: "plats",
@@ -82,17 +82,17 @@ const Menu: React.FC = () => {
     {
       id: 7,
       name: "Yassa Poulet",
-      description: "Riz blanc, accompagnement : sauce à base de l'oignons, citron, poulet",
-      price: "7,50 €",
-      image: "https://images.pexels.com/photos/5779567/pexels-photo-5779567.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      description: "Un plat sénégalais emblématique où le poulet est mariné et mijoté dans une sauce onctueuse à base d'oignons caramélisés et de citron, servi avec du riz.",
+      price: "12 €",
+      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
       category: "plats",
       spicy: true
     },
     {
       id: 8,
-      name: "Thieb au poisson",
-      description: "Riz cuisiné dans la sauce tomate avec ses légumes, poisson Merlu, accompagnement : sauce tomate",
-      price: "8,50 €",
+      name: "Thiép au viande",
+      description: "Un plat national sénégalais, un délicieux riz cassé au viande et légumes mijotés dans la sauce tomate riche.",
+      price: "18 €",
       image: "https://images.pexels.com/photos/6419656/pexels-photo-6419656.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
       category: "plats"
     },
@@ -101,28 +101,29 @@ const Menu: React.FC = () => {
     {
       id: 9,
       name: "Poulet braisé",
-      description: "Cuisse de poulet marinée, accompagnement au choix (salade ou riz blanc ou banane plantain)",
-      price: "9,50 €",
+      description: "Un classique incontournable : un poulet mariné puis braisé à la perfection, pour une peau croustillante et une chair juteuse.",
+      price: "15 €",
       image: "https://images.pexels.com/photos/5779569/pexels-photo-5779569.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
       category: "plats",
       signature: true
     },
     {
       id: 10,
-      name: "Miam miam",
-      description: "Pilons de poulet marinée, accompagnement au choix (salade ou riz blanc ou banane plantain)",
-      price: "11,50 €",
-      image: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      name: "Couscous marocain",
+      description: "Un couscous moelleux et parfumé, accompagné d'un bouillon aux épices délicates et de légumes variés, dans la pure tradition marocaine.",
+      price: "12 €",
+      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
       category: "plats",
-      vegetarian: true
-    },,
+      spicy: true
+    },
     {
       id: 11,
-      name: "Dibi",
-      description: "Brochettes de viande de veau grillée, accompagnement au choix (salade ou riz blanc ou banane plantain)",
-      price: "12,50 €",
-      image: "https://images.pexels.com/photos/5779569/pexels-photo-5779569.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
-      category: "plats"
+      name: "Pâte méditerranéennes",
+      description: "Des pâtes cuites d'un mélange de légumes frais du soleil méditerranéen et d'une sauce lèger.",
+      price: "12 €",
+      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      category: "plats",
+      spicy: true
     },
     {
       id: 12,
@@ -166,7 +167,151 @@ const Menu: React.FC = () => {
       price: "15,50 €",
       image: "https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
       category: "specialites"
-    }
+    },
+     {
+      id: 17,
+      name: "Attiéké viande",
+      description: "L'Attiéké est agrémenté de morceau de viande tendre et savoureuse, offrant une alternative consistante pour les amateurs de viande.",
+      price: "15 €",
+      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      category: "plats",
+      spicy: true
+    },
+    {
+      id: 18,
+      name: "Thiéboudienne",
+      description: "Le plat national sénégalais, un délicieux riz cassé au poisson et légumes mijotés dans une sauce tomate riche.",
+      price: "15 €",
+      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      category: "plats",
+      spicy: true
+    },
+    {
+      id: 19,
+      name: "C'est bon",
+      description: "Riz avec poisson briasé  et sauce à base d'oignon , huile de palme.",
+      price: "18 €",
+      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      category: "plats",
+      spicy: true
+    },
+    {
+      id: 20,
+      name: "Attiéké au poisson",
+      description: "Le couscous de manioc ivoirien, l'attiéké, est ici servi avec du poisson frit ou braisé, accompagné de légumes et d'une sauce piquante.",
+      price: "18 €",
+      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      category: "plats",
+      spicy: true
+    },
+    {
+      id: 21,
+      name: "Attiéké poulet",
+      description: "Un plat simple et délicieux composé d'attiéké moelleux servi avec du poulet braisé ou frit, idéal pour un repas léger et savoureux.",
+      price: "18 €",
+      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      category: "plats",
+      spicy: true
+    },
+    {
+      id: 22,
+      name: "Soupe Yelle",
+      description: "Une soupe traditionnelle sénégalaise, riche et consistante, souvent à base de viande ou de poisson, et de légumes locaux.",
+      price: "18 €",
+      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      category: "plats",
+      spicy: true
+    },
+    {
+      id: 23,
+      name: "Couscous sénégalais",
+      description: "Un couscous fin et aérien, servi avec un bouillon riche et une variété de viandes et légumes, selon la tradition sénégalaise.",
+      price: "18 €",
+      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      category: "plats",
+      spicy: true
+    },
+    {
+      id: 24,
+      name: "Vermicelles viande",
+      description: "Une variation des vermicelles, où des morceaux de viande généreux sont mélangés aux vermicelles et aux légumes, pour un repas plus copieux.",
+      price: "18 €",
+      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      category: "plats",
+      spicy: true
+    },
+    {
+      id: 25,
+      name: "Dibi agneau",
+      description: "De l'agneau grillé à la perfection, assaisonné d'épices sénégalaises croustillant à l'exterieur et juteux à l'interieux, généralement servi avec des oignons.",
+      price: "18 €",
+      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      category: "plats",
+      spicy: true
+    },
+    {
+      id: 26,
+      name: "Saka Saka (viande)",
+      description: "Un ragoût africain riche et feuillu, préparé à base de feuilles de manioc pilées et de morceaux de viande tendre, plein de saveurs.",
+      price: "12 €",
+      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      category: "plats",
+      spicy: true
+    },
+    {
+      id: 27,
+      name: "Thiou Curry",
+      description: "Un plat parfumé inspiré des saveurs indiennes et africaines, où la viande est cuisinée dans une sauce curry douce et aromatique.",
+      price: "12 €",
+      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      category: "plats",
+      spicy: true
+    },
+    {
+      id: 29,
+      name: "Fouti",
+      description: "Plat emblématique de la guinée à base de riz blanc, gombo.",
+      price: "12 €",
+      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      category: "plats",
+      spicy: true
+    },
+    {
+      id: 30,
+      name: "Mbaxal Saloum",
+      description: "Plat preparé à base du riz, de la poudre d'arrachide, viande, haricot.",
+      price: "12 €",
+      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      category: "plats",
+      spicy: true
+    },
+    {
+      id: 31,
+      name: "Vermicelles poulet",
+      description: "Des vermicelles fins et délicats sautés avec du poulet tendre et des légumes croquants, pour un plat léger et savoureux.",
+      price: "12 €",
+      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      category: "plats",
+      spicy: true
+    },
+    {
+      id: 32,
+      name: "Soupa Kandia (fruits de mer)",
+      description: "Une soupe sénégalaise onctueuse et gourmande à base de gombo et d'huile de palme, généreusement garnie de fruits de mer frais.",
+      price: "18 €",
+      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      category: "plats",
+      spicy: true
+    },
+    {
+      id: 33,
+      name: "Thiou Diwtiir",
+      description: "Un plat réconfortant de poulet fumé mijoté dans une sauce savoureuse offrant des arômes profond et authentique.",
+      price: "18 €",
+      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      category: "plats",
+      spicy: true
+    },
   ];
 
   const drinks = [

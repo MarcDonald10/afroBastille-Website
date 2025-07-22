@@ -26,7 +26,7 @@ const Contact: React.FC = () => {
                   <div>
                     <h4 className="font-semibold text-gray-800 mb-2">Adresse</h4>
                     <p className="text-gray-600">
-                      12 Rue de la Bastille<br />
+                      1 Rue Amiral Courbet,<br />
                       38000 Grenoble, France
                     </p>
                   </div>
@@ -37,10 +37,10 @@ const Contact: React.FC = () => {
                   <div>
                     <h4 className="font-semibold text-gray-800 mb-2">Téléphone</h4>
                     <a 
-                      href="tel:+33758814737" 
+                      href="tel:+33752898820" 
                       className="text-gray-600 hover:text-yellow-600 transition-colors"
                     >
-                      +33 7 58 81 47 37
+                      +33 7 52 89 88 20
                     </a>
                   </div>
                 </div>

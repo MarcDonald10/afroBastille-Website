@@ -232,11 +232,11 @@ const Reservation: React.FC = () => {
                   Appelez-nous directement pour réserver votre table
                 </p>
                 <a 
-                  href="tel:+33758814737"
+                  href="tel:+33752898820"
                   className="inline-flex items-center bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"
                 >
                   <Phone className="mr-2" size={20} />
-                  +33 7 58 81 47 37
+                  +33 7 52 89 88 20
                 </a>
               </div>
 

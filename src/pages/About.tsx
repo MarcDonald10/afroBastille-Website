@@ -201,7 +201,7 @@ const About: React.FC = () => {
                     <div>
                       <h4 className="font-semibold mb-2" style={{ color: '#0C0D0Eff' }}>Adresse</h4>
                       <p style={{ color: '#0C0D0Eff' }}>
-                        Grenoble, France
+                        1 Rue Amiral Courbet, 38000 Grenoble, France
                       </p>
                     </div>
                   </div>
@@ -210,8 +210,8 @@ const About: React.FC = () => {
                     <Phone className="mt-1 flex-shrink-0" size={24} style={{ color: '#0C0D0Eff' }} />
                     <div>
                       <h4 className="font-semibold mb-2" style={{ color: '#0C0D0Eff' }}>Téléphone</h4>
-                      <a href="tel:+33758814737" className="hover:underline" style={{ color: '#0C0D0Eff' }}>
-                        +33 7 58 81 47 37
+                      <a href="tel:+33752898820" className="hover:underline" style={{ color: '#0C0D0Eff' }}>
+                        +33 7 52 89 88 20
                       </a>
                     </div>
                   </div>

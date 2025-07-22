@@ -392,15 +392,15 @@ const Reservation: React.FC = () => {
                     Appelez-nous directement pour réserver votre table ou pour des groupes de plus de 10 personnes
                   </p>
                   <a 
-                    href="tel:+33758814737"
+                    href="tel:+33752898820"
                     className="inline-flex items-center bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-700 transition-colors transform hover:scale-105"
                   >
                     <Phone className="mr-2" size={20} />
-                    +33 7 58 81 47 37
+                    +33 7 52 89 88 20
                   </a>
                   <div className="mt-4">
                     <a
-                      href="https://wa.me/33758814737?text=Bonjour%2C%20je%20souhaite%20réserver%20une%20table%20au%20restaurant."
+                      href="https://wa.me/33752898820?text=Bonjour%2C%20je%20souhaite%20réserver%20une%20table%20au%20restaurant."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition-colors transform hover:scale-105"

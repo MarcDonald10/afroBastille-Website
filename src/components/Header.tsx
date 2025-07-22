@@ -81,7 +81,7 @@ const Header: React.FC = () => {
 
           {/* Bouton de réservation avec motif */}
           <div className="hidden md:flex items-center space-x-4">
-            <a href="tel:+33758814737" className="text-[#E8DD8D] hover:text-black transition-colors">
+            <a href="tel:+33752898820" className="text-[#E8DD8D] hover:text-black transition-colors">
               <Phone size={20} />
             </a>
             <Link
