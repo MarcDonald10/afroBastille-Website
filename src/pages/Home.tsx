@@ -5,7 +5,11 @@ import AnimatedText from '../components/AnimatedText';
 import AnimatedSection from '../components/AnimatedSection';
 import AnimatedCard from '../components/AnimatedCard';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
-import heroImg from '../../assets/images/hero.jpg'
+import heroImg from '../../assets/images/hero.jpg';
+import ThieboudienneImg from '../../assets/images/menu/Thiéboudienne.jpg';
+import MaffeImg from '../../assets/images/menu/mafe.jpg';
+import YassaPouletImg from '../../assets/images/menu/YassaPoulet.jpg';
+
 
 const Home: React.FC = () => {
   const { ref: heroRef, isVisible: heroVisible } = useScrollAnimation();
@@ -192,22 +196,22 @@ const Home: React.FC = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                name: "Thieboudienne",
-                description: "Le plat national sénégalais, riz au poisson et légumes",
-                image: "https://images.pexels.com/photos/5779568/pexels-photo-5779568.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
-                price: "16,50 €"
+                name: "Thiéboudienne",
+                description: "Le plat national sénégalais, un délicieux riz cassé au poisson et légumes mijotés dans une sauce tomate riche.",
+                image: ThieboudienneImg,
+                price: "15 €"
               },
               {
-                name: "Maffé",
-                description: "Ragout de bœuf à la pâte d'arachide, un délice onctueux",
-                image: "https://images.pexels.com/photos/6419655/pexels-photo-6419655.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
-                price: "15,00 €"
+                name: "Mafé (Poulet et viande)",
+                description: "Un ragoût copieux à base de pâte d'arachide, de poulet ou de viande, et de légumes, offrant une saveur riche et légèrement sucrée.",
+                image: MaffeImg,
+                price: "12 €"
               },
               {
                 name: "Yassa Poulet",
-                description: "Poulet mariné aux oignons et citron, saveurs intenses",
-                image: "https://images.pexels.com/photos/5779567/pexels-photo-5779567.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
-                price: "14,50 €"
+                description: "Un plat sénégalais emblématique où le poulet est mariné et mijoté dans une sauce onctueuse à base d'oignons caramélisés et de citron, servi avec du riz.",
+                image: YassaPouletImg,
+                price: "12 €"
               }
             ].map((dish, index) => (
               <AnimatedCard key={index} hoverEffect="scale" delay={index * 300} className="group bg-white rounded-xl shadow-lg overflow-hidden">

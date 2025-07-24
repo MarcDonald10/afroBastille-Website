@@ -218,13 +218,13 @@ const Contact: React.FC = () => {
                     <div>
                       <h4 className="font-semibold text-gray-800 mb-2">Adresse</h4>
                       <p className="text-gray-600">
-                        1 Rue Amiral Courbet, <br />
-                        38000 Grenoble, France
+                       Afro Bastille 1 : 87 rue Saint Laurent, 38000 Grenoble, France <br />
+                       Afro Bastille 2 : 1 Rue Amiral Courbet,  38000 Grenoble, France
                       </p>
-                      <button className="mt-2 text-orange-600 hover:text-orange-700 text-sm font-medium flex items-center">
+                      {/* <button className="mt-2 text-orange-600 hover:text-orange-700 text-sm font-medium flex items-center">
                         <Navigation size={14} className="mr-1" />
                         Itinéraire
-                      </button>
+                      </button> */}
                     </div>
                   </div>
 
@@ -282,6 +282,7 @@ const Contact: React.FC = () => {
                   </div>
                 </div>
               </div>
+              
 
               {/* Réseaux sociaux */}
               <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-2xl shadow-lg border border-purple-200">
@@ -330,7 +331,20 @@ const Contact: React.FC = () => {
                   <div className="text-center text-gray-500">
                     <MapPin size={64} className="mx-auto mb-4" />
                     <p className="text-lg font-medium">Carte Google Maps</p>
-                    <p className="text-sm">12 Rue de la Bastille, 38000 Grenoble</p>
+                    <p className="text-sm">Afro Bastille 1 : 87 rue Saint Laurent, 38000 Grenoble, France</p>
+                    <p className="text-sm mt-2">
+                      Intégration Google Maps API requise pour l'affichage interactif
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div className="h-96 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                  <div className="text-center text-gray-500">
+                    <MapPin size={64} className="mx-auto mb-4" />
+                    <p className="text-lg font-medium">Carte Google Maps</p>
+                    <p className="text-sm">Afro Bastille 2 : 1 Rue Amiral Courbet, 38000 Grenoble</p>
                     <p className="text-sm mt-2">
                       Intégration Google Maps API requise pour l'affichage interactif
                     </p>

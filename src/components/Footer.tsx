@@ -76,6 +76,7 @@ const Footer: React.FC = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="text-[#E8DD8D] mt-1 flex-shrink-0" size={16} />
                 <div className="text-sm">
+                  <p>87 rue Saint Laurent, 38000 Grenoble, France</p>
                   <p>1 Rue Amiral Courbet, 38000 Grenoble, France</p>
                 </div>
               </div>

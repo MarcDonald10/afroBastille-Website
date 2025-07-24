@@ -26,8 +26,8 @@ const Contact: React.FC = () => {
                   <div>
                     <h4 className="font-semibold text-gray-800 mb-2">Adresse</h4>
                     <p className="text-gray-600">
-                      1 Rue Amiral Courbet,<br />
-                      38000 Grenoble, France
+                      1 Rue Amiral Courbet,38000 Grenoble, France
+                      87 rue Saint Laurent, 38000 Grenoble, France
                     </p>
                   </div>
                 </div>
