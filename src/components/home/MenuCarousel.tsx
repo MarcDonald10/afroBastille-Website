@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { useSwipeable } from 'react-swipeable';
 import AnimatedText from '../../components/AnimatedText';
 import ThieboudienneImg from '../../../assets/images/menu/Thiéboudienne.jpg';
 import MaffeImg from '../../../assets/images/menu/mafe.jpg';
@@ -44,24 +45,24 @@ const MenuCarousel: React.FC = () => {
   const [visibleItems, setVisibleItems] = useState(1);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Determine number of visible items based on screen size
+  // Déterminer le nombre d'items visibles selon la taille de l'écran
   const getVisibleItems = () => {
     if (window.innerWidth >= 768) return 3; // md:w-1/3
     if (window.innerWidth >= 640) return 2; // sm:w-1/2
     return 1; // w-full
   };
 
-  // Update visibleItems on resize
+  // Mettre à jour visibleItems au redimensionnement
   useEffect(() => {
     const updateVisibleItems = () => {
       setVisibleItems(getVisibleItems());
     };
-    updateVisibleItems(); // Initial call
+    updateVisibleItems();
     window.addEventListener('resize', updateVisibleItems);
     return () => window.removeEventListener('resize', updateVisibleItems);
   }, []);
 
-  // Automatic slide transition
+  // Transition automatique des slides
   useEffect(() => {
     if (menuItems.length <= visibleItems || isPaused) return;
 
@@ -75,7 +76,7 @@ const MenuCarousel: React.FC = () => {
     return () => clearInterval(interval);
   }, [isPaused, visibleItems]);
 
-  // Handle navigation
+  // Gestion de la navigation
   const handlePrev = () => {
     if (isTransitioning || menuItems.length <= visibleItems) return;
     setIsTransitioning(true);
@@ -97,19 +98,27 @@ const MenuCarousel: React.FC = () => {
     setCurrentIndex(index);
   };
 
-  // Reset transitioning state after animation
+  // Réinitialiser l'état de transition après l'animation
   useEffect(() => {
     if (isTransitioning) {
       timeoutRef.current = setTimeout(() => {
         setIsTransitioning(false);
-      }, 500); // Match transition duration
+      }, 500);
     }
     return () => {
       if (timeoutRef.current) clearTimeout(timeoutRef.current);
     };
   }, [currentIndex, isTransitioning]);
 
-  // Handle empty state
+  // Support des gestes de glissement
+  const handlers = useSwipeable({
+    onSwipedLeft: handleNext,
+    onSwipedRight: handlePrev,
+    trackMouse: true, // Permet le drag à la souris pour les tests
+    preventDefaultTouchmoveEvent: true, // Empêche le défilement de la page sur mobile
+  });
+
+  // Gestion de l'état vide
   if (menuItems.length === 0) {
     return (
       <div className="text-center py-10">
@@ -125,17 +134,18 @@ const MenuCarousel: React.FC = () => {
 
   return (
     <div
-      className="relative w-full max-w-6xl mx-auto mt-6 px-4 sm:px-6"
+      {...handlers}
+      className="relative w-full"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
-      {/* Title */}
+      {/* Titre */}
       <h2 className="text-2xl sm:text-3xl font-bold text-white text-center mb-6">
         <AnimatedText text="Menu Midi" type="cascade" />
       </h2>
 
-      {/* Carousel Container */}
-      <div className="overflow-hidden">
+      {/* Conteneur du carrousel */}
+      <div className="overflow-hidden w-full">
         <div
           className={`flex ${shouldSlide ? 'transition-transform duration-500 ease-in-out' : ''}`}
           style={{
@@ -145,7 +155,7 @@ const MenuCarousel: React.FC = () => {
           {menuItems.map((item, index) => (
             <div
               key={index}
-              className={`flex-shrink-0 w-full sm:w-1/2 md:w-1/3 px-2`}
+              className={`flex-shrink-0 w-full sm:w-1/2 md:w-1/3 px-0 sm:px-2`} // Pas de padding sur mobile
               role="group"
               aria-label={`Menu item: ${item.title}`}
             >
@@ -156,7 +166,7 @@ const MenuCarousel: React.FC = () => {
                     alt={item.alt}
                     className="w-full h-36 sm:h-48 object-cover group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
-                    onError={(e) => (e.currentTarget.src = '/path/to/fallback-image.jpg')} // Fallback image
+                    onError={(e) => (e.currentTarget.src = '/path/to/fallback-image.jpg')}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <div className="absolute bottom-2 right-2 bg-yellow-500 text-white px-2 py-1 rounded-full text-sm font-semibold">
@@ -167,7 +177,7 @@ const MenuCarousel: React.FC = () => {
                   <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2">
                     <AnimatedText text={item.title} type="cascade" />
                   </h3>
-                  <p className="text-gray-600 text-sm sm:text-base line-clamp-4">
+                  <p className="text-gray-600 text-sm sm:text-base line-clamp-2">
                     <AnimatedText text={item.description} type="cascade" />
                   </p>
                 </div>
@@ -177,33 +187,33 @@ const MenuCarousel: React.FC = () => {
         </div>
       </div>
 
-      {/* Navigation Arrows */}
+      {/* Flèches de navigation */}
       {shouldSlide && (
         <>
           <button
-            className={`absolute left-0 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 p-2 rounded-full hover:bg-opacity-75 transition ${
+            className={`absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 p-2 rounded-full hover:bg-opacity-75 transition ${
               isTransitioning ? 'opacity-50 cursor-not-allowed' : ''
             }`}
             onClick={handlePrev}
             disabled={isTransitioning}
-            aria-label="Previous slide"
+            aria-label="Diapositive précédente"
           >
-            <ChevronLeft size={24} className="text-gray-800" />
+            <ChevronLeft size={20} className="text-gray-800" />
           </button>
           <button
-            className={`absolute right-0 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 p-2 rounded-full hover:bg-opacity-75 transition ${
+            className={`absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 p-2 rounded-full hover:bg-opacity-75 transition ${
               isTransitioning ? 'opacity-50 cursor-not-allowed' : ''
             }`}
             onClick={handleNext}
             disabled={isTransitioning}
-            aria-label="Next slide"
+            aria-label="Diapositive suivante"
           >
-            <ChevronRight size={24} className="text-gray-800" />
+            <ChevronRight size={20} className="text-gray-800" />
           </button>
         </>
       )}
 
-      {/* Navigation Dots */}
+      {/* Points de navigation */}
       {shouldSlide && (
         <div className="flex justify-center mt-4 space-x-2">
           {Array.from({ length: menuItems.length - visibleItems + 1 }).map((_, index) => (
@@ -214,7 +224,8 @@ const MenuCarousel: React.FC = () => {
               }`}
               onClick={() => handleDotClick(index)}
               onKeyDown={(e) => e.key === 'Enter' && handleDotClick(index)}
-              aria-label={`Go to slide ${index + 1}`}
+              aria-label={`Aller à la diapositive ${index + 1}`}
+              aria-current={index === currentIndex ? 'true' : 'false'}
               disabled={isTransitioning}
               tabIndex={0}
             />
