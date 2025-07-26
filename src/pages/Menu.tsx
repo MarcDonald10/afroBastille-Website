@@ -146,7 +146,7 @@ const Menu: React.FC = () => {
     },
     {
       id: 12,
-      name: "Menu africa",
+      name: "Bastille d'afrique",
       description: "Plat au choix (Yassa, Mafé, Thieb au poulet, thieb au poisson) + Boisson 33 CL",
       price: "8,50 €",
       image: "https://images.pexels.com/photos/5779569/pexels-photo-5779569.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
@@ -173,7 +173,7 @@ const Menu: React.FC = () => {
     },
     {
       id: 15,
-      name: "Formule midi",
+      name: "Belledonne-Dakar",
       description: "Entrée ou Dessert + Plat au choix (Yassa, Mafé, Thieb au poulet, thieb au poisson)",
       price: "11,50 €",
       image: "https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
@@ -181,7 +181,7 @@ const Menu: React.FC = () => {
     },,
     {
       id: 16,
-      name: "Menu terangua",
+      name: "Teranga Alpin",
       description: "Entrée + Plat au choix (Yassa, Mafé, Thieb au poulet, thieb au poisson) + Dessert",
       price: "15,50 €",
       image: "https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
@@ -439,7 +439,7 @@ const Menu: React.FC = () => {
     },
     {
       id: 12,
-      name: "Menu africa",
+      name: "Bastille d'afrique",
       description: "Plat au choix (Yassa, Mafé, Thieb au poulet, thieb au poisson) + Boisson 33 CL",
       price: "8,50 €",
       image: "https://images.pexels.com/photos/5779569/pexels-photo-5779569.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
@@ -466,7 +466,7 @@ const Menu: React.FC = () => {
     },
     {
       id: 15,
-      name: "Formule midi",
+      name: "Belledonne-Dakar",
       description: "Entrée ou Dessert + Plat au choix (Yassa, Mafé, Thieb au poulet, thieb au poisson)",
       price: "11,50 €",
       image: "https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
@@ -474,7 +474,7 @@ const Menu: React.FC = () => {
     },,
     {
       id: 16,
-      name: "Menu terangua",
+      name: "Teranga Alpin",
       description: "Entrée + Plat au choix (Yassa, Mafé, Thieb au poulet, thieb au poisson) + Dessert",
       price: "15,50 €",
       image: "https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
