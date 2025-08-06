@@ -271,7 +271,7 @@ const Contact: React.FC = () => {
               </div>
 
               {/* Moyens de paiement */}
-              <div className="bg-gradient-to-br from-green-50 to-blue-50 p-8 rounded-2xl shadow-lg border border-green-200">
+              {/* <div className="bg-gradient-to-br from-green-50 to-blue-50 p-8 rounded-2xl shadow-lg border border-green-200">
                 <h3 className="text-xl font-bold text-gray-800 mb-4">Moyens de Paiement</h3>
                 <div className="flex items-center space-x-4 text-gray-600">
                   <CreditCard size={24} />
@@ -281,7 +281,7 @@ const Contact: React.FC = () => {
                     <p className="text-sm">Espèces, Chèques, Tickets restaurant</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
               
 
               {/* Réseaux sociaux */}

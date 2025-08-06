@@ -35,7 +35,7 @@ const HeroSection: React.FC = () => {
       </h1>
 
       <p
-        className={`text-lg sm:text-xl md:text-2xl lg:text-3xl font-light mb-4 ${
+        className={`text-lg sm:text-xl md:text-2xl lg:text-2xl font-light mb-2 ${
           heroVisible ? 'animate-slide-in-bottom' : 'opacity-0'
         }`}
         style={{ animationDelay: '0.5s' }}
