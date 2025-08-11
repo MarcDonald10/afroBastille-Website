@@ -218,7 +218,7 @@ const Contact: React.FC = () => {
                     <div>
                       <h4 className="font-semibold text-gray-800 mb-2">Adresse</h4>
                       <p className="text-gray-600">
-                       Afro Bastille 1 : 87 rue Saint Laurent, 38000 Grenoble, France <br />
+                       Afro Bastille 1 : 87 Rue Saint Laurent, 38000 Grenoble, France <br />
                        Afro Bastille 2 : 1 Rue Amiral Courbet,  38000 Grenoble, France
                       </p>
                       {/* <button className="mt-2 text-orange-600 hover:text-orange-700 text-sm font-medium flex items-center">

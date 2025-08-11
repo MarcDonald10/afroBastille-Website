@@ -34,20 +34,20 @@ const About: React.FC = () => {
           <svg width="100%" height="100%" viewBox="0 0 200 200">
             <defs>
               <pattern id="about-hero-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
-                <path d="M50 10L60 40L90 50L60 60L50 90L40 60L10 50L40 40L50 10Z" 
-                      stroke="currentColor" strokeWidth="2" fill="none"/>
-                <circle cx="25" cy="25" r="3" fill="currentColor"/>
-                <circle cx="75" cy="75" r="3" fill="currentColor"/>
+                <path d="M50 10L60 40L90 50L60 60L50 90L40 60L10 50L40 40L50 10Z"
+                  stroke="currentColor" strokeWidth="2" fill="none" />
+                <circle cx="25" cy="25" r="3" fill="currentColor" />
+                <circle cx="75" cy="75" r="3" fill="currentColor" />
               </pattern>
             </defs>
-            <rect width="100%" height="100%" fill="url(#about-hero-pattern)"/>
+            <rect width="100%" height="100%" fill="url(#about-hero-pattern)" />
           </svg>
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-7xl font-bold text-gray-800 mb-6" 
-                style={{ fontFamily: 'Dancing Script, cursive' }}>
+            <h1 className="text-5xl md:text-7xl font-bold text-gray-800 mb-6"
+              style={{ fontFamily: 'Dancing Script, cursive' }}>
               Notre Histoire
             </h1>
             <p className="text-2xl text-gray-600 mb-8 leading-relaxed">
@@ -66,7 +66,7 @@ const About: React.FC = () => {
               <div className="relative">
                 <div className="absolute -inset-4 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-xl transform rotate-3"></div>
                 <div className="relative bg-white p-4 rounded-xl shadow-lg">
-                  <img 
+                  <img
                     src="https://images.pexels.com/photos/5779568/pexels-photo-5779568.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
                     alt="Famille Diop"
                     className="w-full h-80 object-cover rounded-lg"
@@ -74,8 +74,8 @@ const About: React.FC = () => {
                   {/* Motif décoratif sur l'image */}
                   <div className="absolute top-2 right-2 w-16 h-16 opacity-20">
                     <svg viewBox="0 0 64 64" className="w-full h-full">
-                      <path d="M32 8L40 24L56 32L40 40L32 56L24 40L8 32L24 24L32 8Z" 
-                            fill="white" stroke="white" strokeWidth="2"/>
+                      <path d="M32 8L40 24L56 32L40 40L32 56L24 40L8 32L24 24L32 8Z"
+                        fill="white" stroke="white" strokeWidth="2" />
                     </svg>
                   </div>
                 </div>
@@ -83,20 +83,20 @@ const About: React.FC = () => {
 
               {/* Contenu */}
               <div>
-                <h2 className="text-4xl font-bold text-gray-800 mb-6" 
-                    style={{ fontFamily: 'Dancing Script, cursive' }}>
-                 
+                <h2 className="text-4xl font-bold text-gray-800 mb-6"
+                  style={{ fontFamily: 'Dancing Script, cursive' }}>
+
                 </h2>
                 <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
                   <p>
-                   Situé au cœur de Grenoble, Afro Bastille est un restaurant gastronomique Sénégalais . 
-                   Nous proposons une cuisine Exotique,authentique, préparée à partir de produits frais, 
-                   dans le respect des recettes ancestrales. 
-                   
+                    Situé au cœur de Grenoble, Afro Bastille est un restaurant gastronomique Sénégalais .
+                    Nous proposons une cuisine Exotique,authentique, préparée à partir de produits frais,
+                    dans le respect des recettes ancestrales.
+
                   </p>
                   <p>
-                    Notre établissement offre un cadre chaleureux, convivial et soigné, 
-                   propice à la découverte des saveurs d’Afrique et d'ailleurs.
+                    Notre établissement offre un cadre chaleureux, convivial et soigné,
+                    propice à la découverte des saveurs d’Afrique et d'ailleurs.
                   </p>
                   {/* <p>
                     Aujourd'hui, notre restaurant est devenu un pont entre deux cultures, un lieu où 
@@ -133,8 +133,8 @@ const About: React.FC = () => {
               }}
             >
               <svg width="30" height="30" viewBox="0 0 30 30">
-                <path d="M15 3L18 12L27 15L18 18L15 27L12 18L3 15L12 12L15 3Z" 
-                      fill="currentColor" opacity="0.3"/>
+                <path d="M15 3L18 12L27 15L18 18L15 27L12 18L3 15L12 12L15 3Z"
+                  fill="currentColor" opacity="0.3" />
               </svg>
             </div>
           ))}
@@ -142,8 +142,8 @@ const About: React.FC = () => {
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4" 
-                style={{ fontFamily: 'Dancing Script, cursive' }}>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4"
+              style={{ fontFamily: 'Dancing Script, cursive' }}>
               Nos Valeurs
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -172,8 +172,8 @@ const About: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4" 
-                  style={{ fontFamily: 'Dancing Script, cursive' }}>
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4"
+                style={{ fontFamily: 'Dancing Script, cursive' }}>
                 Informations Pratiques
               </h2>
             </div>
@@ -182,7 +182,7 @@ const About: React.FC = () => {
               {/* Horaires et Contact */}
               <div className="bg-gradient-to-br from-yellow-50 to-orange-50 p-8 rounded-xl shadow-lg">
                 <h3 className="text-2xl font-bold text-gray-800 mb-6">Contact & Horaires</h3>
-                
+
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
                     <Clock className="mt-1 flex-shrink-0" size={24} style={{ color: '#0C0D0Eff' }} />
@@ -201,7 +201,8 @@ const About: React.FC = () => {
                     <div>
                       <h4 className="font-semibold mb-2" style={{ color: '#0C0D0Eff' }}>Adresse</h4>
                       <p style={{ color: '#0C0D0Eff' }}>
-                        1 Rue Amiral Courbet, 38000 Grenoble, France
+                        1 Rue Amiral Courbet, 38000 Grenoble, France
+                        87 Rue Saint Laurent, 38000 Grenoble, France
                       </p>
                     </div>
                   </div>
@@ -217,7 +218,7 @@ const About: React.FC = () => {
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <Mail className="text-yellow-600 mt-1 flex-shrink-0" size={24}  style={{ color: '#0C0D0Eff' }}/>
+                    <Mail className="text-yellow-600 mt-1 flex-shrink-0" size={24} style={{ color: '#0C0D0Eff' }} />
                     <div>
                       <h4 className="font-semibold text-gray-800 mb-2">Email</h4>
                       <a href="mailto:contact@afrobastille.fr" className="text-gray-600 hover:text-yellow-600 transition-colors">
@@ -231,7 +232,7 @@ const About: React.FC = () => {
               {/* Services */}
               <div className="bg-gradient-to-br from-green-50 to-blue-50 p-8 rounded-xl shadow-lg">
                 <h3 className="text-2xl font-bold text-gray-800 mb-6">Nos Services</h3>
-                
+
                 <div className="space-y-4">
                   {[
                     "🍽️ Service en salle dans une ambiance authentique",
@@ -259,8 +260,8 @@ const About: React.FC = () => {
       <section className="py-20 bg-gradient-to-br from-yellow-50 to-orange-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4" 
-                style={{ fontFamily: 'Dancing Script, cursive' }}>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4"
+              style={{ fontFamily: 'Dancing Script, cursive' }}>
               Notre Équipe
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -291,8 +292,8 @@ const About: React.FC = () => {
             ].map((member, index) => (
               <div key={index} className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group">
                 <div className="relative mb-4">
-                  <img 
-                    src={member.image} 
+                  <img
+                    src={member.image}
                     alt={member.name}
                     className="w-24 h-24 rounded-full mx-auto object-cover group-hover:scale-110 transition-transform duration-300"
                   />

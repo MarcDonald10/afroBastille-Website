@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useSwipeable } from 'react-swipeable';
 import AnimatedText from '../../components/AnimatedText';
-import ThieboudienneImg from '../../../assets/images/menu/Thiéboudienne.jpg';
+import ThieboudienneImg from '../../../assets/images/menu/thieboudienne.jpeg';
 import MaffeImg from '../../../assets/images/menu/mafe.jpg';
 import YassaPouletImg from '../../../assets/images/menu/YassaPoulet.jpg';
 

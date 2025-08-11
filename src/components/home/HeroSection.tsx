@@ -7,6 +7,7 @@ import heroImg from '../../../assets/images/hero.jpg';
 import FloatingPatterns from './FloatingPatternsProps';
 import MenuCarousel from './MenuCarousel';
 
+
 const HeroSection: React.FC = () => {
   const { ref: heroRef, isVisible: heroVisible } = useScrollAnimation();
 

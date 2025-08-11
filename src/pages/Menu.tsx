@@ -5,6 +5,24 @@ import AnimatedSection from '../components/AnimatedSection';
 import AnimatedCard from '../components/AnimatedCard';
 import { useStaggeredAnimation } from '../hooks/useScrollAnimation';
 
+import aloko from '../../assets/images/menu/aloko.jpg';
+import attiekePoisson from '../../assets/images/menu/attiekePoisson.jpeg';
+import Attiekepoulet from '../../assets/images/menu/Attiekepoulet.jpeg';
+import couscousMarocain from '../../assets/images/menu/couscousMarocain.jpeg';
+import mafe from '../../assets/images/menu/mafe.jpg';
+import pastels from '../../assets/images/menu/pastels.jpg';
+import patteMediteraneen from '../../assets/images/menu/patteMediteraneen.jpeg';
+import pouletBraiser from '../../assets/images/menu/pouletBraiser.jpeg';
+import sakasaka from '../../assets/images/menu/sakasaka.jpeg';
+import saladecrevette from '../../assets/images/menu/saladecrevette.jpg';
+import samoussa from '../../assets/images/menu/samoussa.jpg';
+import thiebaupoulet from '../../assets/images/menu/thiebaupoulet.jpg';
+
+import thieboudienne from '../../assets/images/menu/thieboudienne.jpeg';
+import ThiouCurry from '../../assets/images/menu/ThiouCurry.jpeg';
+import vermicellePoulet from '../../assets/images/menu/vermicellePoulet.jpeg';
+import YassaPoulet from '../../assets/images/menu/YassaPoulet.jpg';
+
 interface MenuItem {
   id: number;
   name: string;
@@ -22,6 +40,8 @@ interface Restaurant {
   name: string;
   address: string;
 }
+
+
 
 const Menu: React.FC = () => {
   const [selectedRestaurant, setSelectedRestaurant] = useState('afro-bastille-1');
@@ -46,7 +66,7 @@ const Menu: React.FC = () => {
       name: "Pastel Boeuf",
       description: "Banane plantain accompagné de salade, tomate sauce vermicelle",
       price: "4,50 €",
-      image: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      image: pastels,
       category: "entrees",
       vegetarian: true
     },
@@ -55,7 +75,7 @@ const Menu: React.FC = () => {
       name: "Samoussas",
       description: "Accompagné de salade , tomate, sauce vermicelle",
       price: "4,80 €",
-      image: "https://images.pexels.com/photos/4518653/pexels-photo-4518653.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      image: samoussa,
       category: "entrees",
       signature: true,
       spicy: true
@@ -65,7 +85,7 @@ const Menu: React.FC = () => {
       name: "Aloko",
       description: "Banane plantain accompagné de salade, tomate sauce vermicelle",
       price: "3,50 €",
-      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      image: aloko,
       category: "entrees",
       vegetarian: true,
       spicy: true
@@ -75,7 +95,7 @@ const Menu: React.FC = () => {
       name: "Salade crevette",
       description: "Accompagné de salade, tomate, mais",
       price: "4,50 €",
-      image: "https://images.pexels.com/photos/6419656/pexels-photo-6419656.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      image: saladecrevette,
       category: "entrees"
     },
     
@@ -85,7 +105,7 @@ const Menu: React.FC = () => {
       name: "Mafé (poulet et viande)",
       description: "Un ragoût copieux à base de pâte d'arachide, de poulet ou de viande, et de légumes, offrant une saveur riche et légèrement sucrée.",
       price: "15 €",
-      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      image: mafe,
       category: "plats",
       signature: true
     },
@@ -103,7 +123,7 @@ const Menu: React.FC = () => {
       name: "Yassa Poulet",
       description: "Un plat sénégalais emblématique où le poulet est mariné et mijoté dans une sauce onctueuse à base d'oignons caramélisés et de citron, servi avec du riz.",
       price: "15 €",
-      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      image: YassaPoulet,
       category: "plats",
       spicy: true
     },
@@ -122,7 +142,7 @@ const Menu: React.FC = () => {
       name: "Poulet braisé",
       description: "Un classique incontournable : un poulet mariné puis braisé à la perfection, pour une peau croustillante et une chair juteuse.",
       price: "18 €",
-      image: "https://images.pexels.com/photos/5779569/pexels-photo-5779569.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      image: pouletBraiser,
       category: "plats",
       signature: true
     },
@@ -131,7 +151,7 @@ const Menu: React.FC = () => {
       name: "Couscous marocain",
       description: "Un couscous moelleux et parfumé, accompagné d'un bouillon aux épices délicates et de légumes variés, dans la pure tradition marocaine.",
       price: "15 €",
-      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      image:couscousMarocain,
       category: "plats",
       spicy: true
     },
@@ -140,7 +160,7 @@ const Menu: React.FC = () => {
       name: "Pâte méditerranéennes",
       description: "Des pâtes cuites d'un mélange de légumes frais du soleil méditerranéen et d'une sauce lèger.",
       price: "15 €",
-      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      image: patteMediteraneen,
       category: "plats",
       spicy: true
     },
@@ -192,7 +212,7 @@ const Menu: React.FC = () => {
       name: "Attiéké viande",
       description: "L'Attiéké est agrémenté de morceau de viande tendre et savoureuse, offrant une alternative consistante pour les amateurs de viande.",
       price: "20 €",
-      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      image: Attiekepoulet,
       category: "plats",
       spicy: true
     },
@@ -201,7 +221,7 @@ const Menu: React.FC = () => {
       name: "Thiéboudienne",
       description: "Le plat national sénégalais, un délicieux riz cassé au poisson et légumes mijotés dans une sauce tomate riche.",
       price: "20 €",
-      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      image: thieboudienne,
       category: "plats",
       spicy: true
     },
@@ -219,7 +239,7 @@ const Menu: React.FC = () => {
       name: "Attiéké au poisson",
       description: "Le couscous de manioc ivoirien, l'attiéké, est ici servi avec du poisson frit ou braisé, accompagné de légumes et d'une sauce piquante.",
       price: "20 €",
-      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      image: attiekePoisson,
       category: "plats",
       spicy: true
     },
@@ -228,7 +248,7 @@ const Menu: React.FC = () => {
       name: "Attiéké poulet",
       description: "Un plat simple et délicieux composé d'attiéké moelleux servi avec du poulet braisé ou frit, idéal pour un repas léger et savoureux.",
       price: "15 €",
-      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      image: Attiekepoulet,
       category: "plats",
       spicy: true
     },
@@ -255,7 +275,7 @@ const Menu: React.FC = () => {
       name: "Vermicelles viande",
       description: "Une variation des vermicelles, où des morceaux de viande généreux sont mélangés aux vermicelles et aux légumes, pour un repas plus copieux.",
       price: "20 €",
-      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      image: vermicellePoulet,
       category: "plats",
       spicy: true
     },
@@ -273,7 +293,7 @@ const Menu: React.FC = () => {
       name: "Saka Saka (viande)",
       description: "Un ragoût africain riche et feuillu, préparé à base de feuilles de manioc pilées et de morceaux de viande tendre, plein de saveurs.",
       price: "15 €",
-      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      image: sakasaka,
       category: "plats",
       spicy: true
     },
@@ -282,7 +302,7 @@ const Menu: React.FC = () => {
       name: "Thiou Curry",
       description: "Un plat parfumé inspiré des saveurs indiennes et africaines, où la viande est cuisinée dans une sauce curry douce et aromatique.",
       price: "15 €",
-      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      image: ThiouCurry,
       category: "plats",
       spicy: true
     },
@@ -309,7 +329,7 @@ const Menu: React.FC = () => {
       name: "Vermicelles poulet",
       description: "Des vermicelles fins et délicats sautés avec du poulet tendre et des légumes croquants, pour un plat léger et savoureux.",
       price: "15 €",
-      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      image: vermicellePoulet,
       category: "plats",
       spicy: true
     },
@@ -396,7 +416,7 @@ const Menu: React.FC = () => {
       name: "Yassa Poulet",
       description: "Un plat sénégalais emblématique où le poulet est mariné et mijoté dans une sauce onctueuse à base d'oignons caramélisés et de citron, servi avec du riz.",
       price: "12 €",
-      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      image: YassaPoulet,
       category: "plats",
       spicy: true
     },
