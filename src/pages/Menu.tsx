@@ -23,6 +23,16 @@ import ThiouCurry from '../../assets/images/menu/ThiouCurry.jpeg';
 import vermicellePoulet from '../../assets/images/menu/vermicellePoulet.jpeg';
 import YassaPoulet from '../../assets/images/menu/YassaPoulet.jpg';
 
+import tiepViand from '../../assets/images/menu/Thiepviande.jpg';
+import couscousSenegalais from '../../assets/images/menu/Thierre-couscoussénégalais.jpg';
+import fouti from '../../assets/images/menu/Fouti.jpg';
+import mbaxal from '../../assets/images/menu/Mbaxalsaloum.jpg';
+import soupeKandia from '../../assets/images/menu/Soupekandia.jpg';
+
+import thiakery from '../../assets/images/menu/Thiakéry.jpg';
+import ngalakh from '../../assets/images/menu/Ngalakh.jpg';
+import moelleuxChocolat from '../../assets/images/menu/Moelleuxchocolat.jpg';
+
 interface MenuItem {
   id: number;
   name: string;
@@ -132,7 +142,7 @@ const Menu: React.FC = () => {
       name: "Thiép au viande",
       description: "Un plat national sénégalais, un délicieux riz cassé au viande et légumes mijotés dans la sauce tomate riche.",
       price: "20 €",
-      image: "https://images.pexels.com/photos/6419656/pexels-photo-6419656.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      image: tiepViand,
       category: "plats"
     },
 
@@ -176,19 +186,19 @@ const Menu: React.FC = () => {
     // Desserts
     {
       id: 13,
-      name: "Thiakry",
+      name: "Thiakéry",
       description: "A base de semoule de mil, fromage blanc et de crème fraiche",
       price: "3,50 €",
-      image: "https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      image: thiakery,
       category: "desserts",
       signature: true
     },
     {
       id: 14,
-      name: "Salade de fruits",
+      name: "Ngalakh",
       description: "Fait maison",
       price: "3,50 €",
-      image: "https://images.pexels.com/photos/1126360/pexels-photo-1126360.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      image: ngalakh,
       category: "desserts"
     },
     {
@@ -266,7 +276,7 @@ const Menu: React.FC = () => {
       name: "Couscous sénégalais",
       description: "Un couscous fin et aérien, servi avec un bouillon riche et une variété de viandes et légumes, selon la tradition sénégalaise.",
       price: "20 €",
-      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      image: couscousSenegalais,
       category: "plats",
       spicy: true
     },
@@ -311,7 +321,7 @@ const Menu: React.FC = () => {
       name: "Fouti",
       description: "Plat emblématique de la guinée à base de riz blanc, gombo.",
       price: "15 €",
-      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      image: fouti,
       category: "plats",
       spicy: true
     },
@@ -320,7 +330,7 @@ const Menu: React.FC = () => {
       name: "Mbaxal Saloum",
       description: "Plat preparé à base du riz, de la poudre d'arrachide, viande, haricot.",
       price: "15 €",
-      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      image: mbaxal,
       category: "plats",
       spicy: true
     },
@@ -338,7 +348,7 @@ const Menu: React.FC = () => {
       name: "Soupa Kandia (fruits de mer)",
       description: "Une soupe sénégalaise onctueuse et gourmande à base de gombo et d'huile de palme, généreusement garnie de fruits de mer frais.",
       price: "20 €",
-      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      image: soupeKandia,
       category: "plats",
       spicy: true
     },
@@ -469,19 +479,19 @@ const Menu: React.FC = () => {
     // Desserts
     {
       id: 13,
-      name: "Thiakry",
+      name: "Thiakéry",
       description: "A base de semoule de mil, fromage blanc et de crème fraiche",
       price: "3,50 €",
-      image: "https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      image: thiakery,
       category: "desserts",
       signature: true
     },
     {
       id: 14,
-      name: "Salade de fruits",
+      name: "Ngalakh",
       description: "Fait maison",
       price: "3,50 €",
-      image: "https://images.pexels.com/photos/1126360/pexels-photo-1126360.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      image: ngalakh,
       category: "desserts"
     },
     {

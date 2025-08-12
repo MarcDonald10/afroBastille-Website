@@ -4,6 +4,11 @@ import AnimatedText from '../components/AnimatedText';
 import AnimatedSection from '../components/AnimatedSection';
 import AnimatedCard from '../components/AnimatedCard';
 import { useStaggeredAnimation, useCountUp } from '../hooks/useScrollAnimation';
+import mafe from '../../assets/images/menu/mafe.jpg';
+import samoussa from '../../assets/images/menu/samoussa.jpg';
+import thieboudienne from '../../assets/images/menu/thieboudienne.jpeg';
+import YassaPoulet from '../../assets/images/menu/YassaPoulet.jpg';
+import thiakery from '../../assets/images/menu/Thiakéry.jpg';
 
 interface GalleryImage {
   id: number;
@@ -23,9 +28,9 @@ const Gallery: React.FC = () => {
   const images: GalleryImage[] = [
     {
       id: 1,
-      src: "https://images.pexels.com/photos/5779568/pexels-photo-5779568.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
-      alt: "Thieboudienne fumant",
-      title: "Thieboudienne - Notre plat signature",
+      src: thieboudienne,
+      alt: "Thiéboudienne",
+      title: "Thiéboudienne - Riz au poisson et légumes",
       category: "plats",
       likes: 127,
       views: 1543
@@ -41,18 +46,18 @@ const Gallery: React.FC = () => {
     },
     {
       id: 3,
-      src: "https://images.pexels.com/photos/5779567/pexels-photo-5779567.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+      src: YassaPoulet,
       alt: "Yassa Poulet",
-      title: "Yassa Poulet aux oignons caramélisés",
+      title: "Yassa Poulet - Un plat sénégalais emblématique",
       category: "plats",
       likes: 156,
       views: 2103
     },
     {
       id: 4,
-      src: "https://images.pexels.com/photos/4518653/pexels-photo-4518653.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
-      alt: "Pastels frits",
-      title: "Pastels - Beignets de poisson croustillants",
+      src: samoussa,
+      alt: "Samoussas",
+      title: "Samoussas - Accompagné de salade , tomate, sauce vermicelle",
       category: "entrees",
       likes: 94,
       views: 1267
@@ -68,9 +73,9 @@ const Gallery: React.FC = () => {
     },
     {
       id: 6,
-      src: "https://images.pexels.com/photos/5779569/pexels-photo-5779569.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
-      alt: "Caldou poisson grillé",
-      title: "Caldou - Poisson grillé sauce tomate",
+      src: mafe,
+      alt: "Mafé (poulet et viande)",
+      title: "Mafé (poulet et viande)",
       category: "plats",
       likes: 178,
       views: 2891
@@ -86,7 +91,7 @@ const Gallery: React.FC = () => {
     },
     {
       id: 8,
-      src: "https://images.pexels.com/photos/6419656/pexels-photo-6419656.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+      src: thiakery,
       alt: "Thiakry dessert",
       title: "Thiakry - Dessert traditionnel",
       category: "desserts",
